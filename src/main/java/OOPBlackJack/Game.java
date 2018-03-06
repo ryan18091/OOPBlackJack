@@ -47,7 +47,6 @@ public class Game {
                     }
                 }
             } else {
-                ;
             }
         }
         //Adds cards to dealers hand
@@ -69,7 +68,6 @@ public class Game {
                 this.players.get(d).setBet(playerBet);
             }
         } else {
-            ;
         }
     }
 
@@ -94,7 +92,6 @@ public class Game {
                             if (stayHit) {
                                 players.get(t).addCard(deck.getNextCard());
                             } else {
-                                ;
                             }
                         } else {
                             System.out.println("You Bust with " + players.get(t).getHand());
@@ -166,7 +163,6 @@ public class Game {
                     }
                 }
             } else {
-                ;
             }
         }
 

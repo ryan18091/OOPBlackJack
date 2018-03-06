@@ -40,11 +40,7 @@ public class Player {
         int choice = sc.nextInt();
 
         if (choice == 1 || choice == 2) {
-            if (choice == 1) {
-                stayHit = false;
-            } else {
-                stayHit = true;
-            }
+            stayHit = choice != 1;
         } else {
             stayOrHit(stayHit);
         }

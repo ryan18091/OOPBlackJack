@@ -2,7 +2,7 @@ package OOPBlackJack;
 
 import java.util.Scanner;
 
-class Card {  // A card
+class Card {
 
     Scanner sc = new Scanner(System.in);
 
@@ -17,10 +17,6 @@ class Card {  // A card
 
     }
 
-
-    Rank getRank() {
-        return rank;
-    }
 
     //Returns value of card while game is in play
     //sets the value of Ace if present
@@ -37,11 +33,11 @@ class Card {  // A card
                 this.getValue();
             }
         } else {
-            ;
         }
 
         return this.value;
     }
+
 
     public void setValue(int value) {
         this.value = value;
@@ -52,11 +48,9 @@ class Card {  // A card
         return this.value;
     }
 
-    Suit getSuit() {
-        return suit;
-    }
 
-    public String toString() {return rank + " of " + suit + " with a value of " + value;
+    public String toString() {
+        return rank + " of " + suit + " with a value of " + value;
     }
 
 

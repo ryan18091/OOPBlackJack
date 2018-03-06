@@ -12,6 +12,7 @@ enum Rank {ACE, TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEE
 
 class CardDeck {  // A deck of card
 
+
     List<Card> deck;
 
 
