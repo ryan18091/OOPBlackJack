@@ -24,18 +24,22 @@ class Card {
         if (this.value == 1) {
             System.out.println("You have an Ace. Do you wish it to be a 1(enter 1) or 11(enter 2)");
             int choice = sc.nextInt();
-            if (choice == 1) {
-                this.setValue(1);
-            } else if (choice == 2) {
-                this.setValue(11);
-            } else {
-                System.out.println("Choice must be a 1 or a 2.");
-                this.getValue();
-            }
+            changeAceValue(choice);
         } else {
         }
 
         return this.value;
+    }
+
+    public void changeAceValue(int choice) {
+        if (choice == 1) {
+            this.setValue(1);
+        } else if (choice == 2) {
+            this.setValue(11);
+        } else {
+            System.out.println("Choice must be a 1 or a 2.");
+            this.getValue();
+        }
     }
 
 
