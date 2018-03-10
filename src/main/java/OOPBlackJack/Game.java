@@ -14,7 +14,7 @@ public class Game {
     private CardDeck deck;
 
     public Game(int playerAmount, int money) { //Constructor
-        players = new ArrayList<Player>();
+        players = new ArrayList<>();
 
         for (int i = 0; i < playerAmount; i++) {
             //instantiates the player(s)

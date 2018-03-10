@@ -38,7 +38,12 @@ public class Player {
         System.out.println("Do you wish to stay or hit?");
         System.out.println("Enter 1 for stay or 2 for hit.");
         int choice = sc.nextInt();
+        stayHit = playerChoice(choice, stayHit);
 
+        return stayHit;
+    }
+
+    public boolean playerChoice(int choice, boolean stayHit) {
         if (choice == 1 || choice == 2) {
             stayHit = choice != 1;
         } else {
@@ -54,10 +59,6 @@ public class Player {
 
     public void setBet(int bet) {
         this.bet = bet;
-    }
-
-    public Object showCard() {
-        return hand.get(1);
     }
 
     public void clearHand() {
