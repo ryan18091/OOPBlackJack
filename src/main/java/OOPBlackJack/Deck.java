@@ -15,8 +15,12 @@ class CardDeck {  // A deck of card
 
     List<Card> deck;
 
+    private static void deck(List<Card> deck) {
 
-    public CardDeck() {   // constructor
+    }
+
+
+    public CardDeck() {
         deck = new ArrayList<Card>();
 
         //Assignes Suit, Rank, and Values to all cards in the deck
