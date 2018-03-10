@@ -20,15 +20,23 @@ public class Game {
             //instantiates the player(s)
             int bet = 0;
             Player player = new Player(money, bet);
-            this.players.add(player);
+            players.add(player);
         }
-        //instantiates the dealer
-        this.dealer = new Dealer(money);
+        // instantiates the dealer
+        dealer = new Dealer(money);
 
-        //Instantiates the deck and shuffles (Should this be done in a setter?)
-        this.deck = new CardDeck();
-        this.deck.shuffle();
+        // Instantiates the deck and shuffles (Should this be done in a setter?)
+        deck = new CardDeck();
+        deck.shuffle();
     }
+
+    // Dependency injected constructor
+//    public Game(List<Player> players, Dealer dealer, CardDeck deck, Scanner scanner) {
+//        this.players = players;
+//        this.dealer = dealer;
+//        this.deck = deck;
+//        this.sc = scanner;
+//    }
 
     public void deal() {
         //Adds cards to player(s) hands
